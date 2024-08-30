@@ -1,0 +1,39 @@
+.MovieCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .rating {
+    text-align: right;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .genre {
+    grid-column: span 2;
+    text-align: right;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+
+    hr {
+      flex: 1;
+      margin-right: 1rem;
+      border: 2px solid var(--color-primary);
+    }
+  }
+
+  .desc {
+    grid-column: span 2;
+    color: #818181;
+    line-height: 1.5;
+  }
+}
